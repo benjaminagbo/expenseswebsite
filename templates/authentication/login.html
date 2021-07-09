@@ -1,0 +1,54 @@
+{% extends 'base_auth.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="row">
+<div class="col-md-4"></div>
+ <div class="col-md-15">
+  <div class="card mt-5">
+
+   <div class="card-body">
+<div class="card-title py-3">
+<h4> Incomes & Expenses Tracking System::Login</h4>
+  </div>
+
+<form action="{% url 'login' %}" method="post">
+     {% csrf_token %}
+       {% include 'partials/_messages.html' %}
+
+    <div class="form-group">
+      <input type="text"
+             name="username"
+             placeholder="username"
+             class="form-control form-control-sm"
+             id="usernameField"/>
+    </div>
+
+     <div class="form-group">
+     <input type="password"
+            name="password"
+            placeholder="password"
+            class="form-control form-control-sm"
+            id="passwordField" />
+    </div>
+<input type="submit"
+       value="login"
+       class="btn btn-block btn-primary submit-btn" />
+   </form>
+   </div>
+      <span style="text-align:center">Don't have an account? <a href="{% url 'register' %}">Register</a></span>
+<br>
+       <br>
+      <span style="text-align:center">Forget Password? <a href="{% url 'request-password' %}">Reset</a></span>
+      <br>
+       <br>
+  </div>
+</div>
+ </div>
+ <div class="col-md-6"></div>
+</div>
+<br>
+<script src="{% static 'js/register.js' %}" ></script>
+{% endblock content %}

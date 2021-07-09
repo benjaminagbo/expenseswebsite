@@ -1,0 +1,17 @@
+{% extends 'admin/login.html' %}
+
+{% load static %}
+{% block branding %}
+<h1 id="head">
+
+    <img src="{% static '/img/logo2.png' %}" width="50" height="40"/>
+
+    Incomes & Expenses Tracking System-Backend Login
+</h1>
+
+
+{% block extra_styles %}
+
+<link rel="stylesheet" href="{% static 'css/adminstyle.css' %}" />
+{% endblock %}
+    {% endblock %}

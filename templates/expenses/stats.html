@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container" align="center">
+    <h2 align="center">My Expenses Summary</h2>
+
+    <div class="col-me-4">
+        <div class="spacer">
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Expense Summary</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Summary</li>
+  </ol>
+</nav>
+            <canvas id="myChart"></canvas>
+    <div class="chart-container" style="height:400px; width:400px"></div>
+        </div>
+        </div>
+
+            </div>
+
+
+
+</div>
+    </div>
+
+</div>
+<script src="{% static 'js/stats.js' %}" ></script>
+
+</script>
+
+{% endblock content %}

@@ -1,0 +1,29 @@
+
+#header{
+ background: maroon;
+    color: white;
+}
+
+#branding h1{
+ color:white;
+}
+
+.login #header {
+    background:maroon;
+
+}
+.login .submit-row{
+padding: 0px !important;
+}
+
+
+
+
+.button,
+input[type=submit],
+input[type=button],
+.submit-row input,
+a.button{
+width:100%;
+background:maroon;
+}
